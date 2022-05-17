@@ -77,8 +77,8 @@ function idInvalidCardCompanies(arr) {
   arr.forEach((element) => {
     let temp = element[0]; //<-Check the first number of each card
     x = numHolder.includes(temp); //<-check if it's already in the list
+    //If not
     if (x === false) {
-      //<-if not
       numHolder.push(temp); //<-add it to the list and run switch
       switch (temp) {
         case 3:
